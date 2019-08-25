@@ -8,7 +8,7 @@ console.log(Number(userBuy));
 
 totalPrice = Number(userBuy) * pricePerDroid;
 
-oddMoney = credits - totalPrice;
+let oddMoney = credits - totalPrice;
 
 if (userBuy === null) {
     message = `Отменено пользователем!`;
