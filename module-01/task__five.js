@@ -1,5 +1,7 @@
 let deliveryOfGoods = prompt(`Indicate the country of delivery`);
-console.log(deliveryOfGoods.toLocaleLowerCase());
+if (deliveryOfGoods === null) {
+  alert('Отменено пользователем!');
+};
 
 let cost;
 let country = deliveryOfGoods.toLocaleLowerCase();
@@ -28,5 +30,4 @@ switch (country) {
   default:
     alert('В вашей стране доставка не доступна');
 }
-
 confirm(`Доставка в ${country} будет стоить ${cost} кредитов.`);
